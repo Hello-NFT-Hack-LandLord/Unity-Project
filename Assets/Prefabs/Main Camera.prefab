@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5118839106680458987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5118839106680458775}
+  - component: {fileID: 5118839106680458984}
+  - component: {fileID: 912303922135517658}
+  - component: {fileID: 5118839106680458774}
+  - component: {fileID: 5118839106680458986}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5118839106680458775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118839106680458987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.15, y: 7.16, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &5118839106680458984
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118839106680458987}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &912303922135517658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118839106680458987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7982f4b626333f749b0334d801e37efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTilemap: {fileID: 0}
+--- !u!114 &5118839106680458774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118839106680458987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eddc646e9bd70c4bbe474b7514121f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomes:
+  - biomeName: Forest
+    normalGround: {fileID: 11400000, guid: 670692fe779f26d479dc1ee56511ab16, type: 2}
+    emptyGround: {fileID: 11400000, guid: 2053f87faa2e730448a723fc4f5e3815, type: 2}
+    biomeElements:
+    - elementName: Tree
+      key: 3
+      probability: 0.8
+      biomeElementInfo:
+      - sprites:
+        - {fileID: 11400000, guid: 14845a575f08fb94aad90a5b30bcf501, type: 2}
+        - {fileID: 11400000, guid: a463a919aff37794b9c20a228be7ab4f, type: 2}
+        - {fileID: 11400000, guid: bd3e68b4d21e2554c83242885f0ceda6, type: 2}
+        - {fileID: 11400000, guid: 4a8cb569a6445ac42a427508174dc5f4, type: 2}
+        - {fileID: 11400000, guid: f883dadd6c89e82428bc6b53cbf1c6fa, type: 2}
+        - {fileID: 11400000, guid: b1fe0d798e36b0c4c8e5d13a5e3eb273, type: 2}
+        - {fileID: 11400000, guid: 0bc7109c8d93d89438661b5c6c03a339, type: 2}
+        probabilities:
+        - 0.2
+        - 0.2
+        - 0.2
+        - 0.2
+        - 0.2
+        - 0.5
+        - 1
+    - elementName: Lake
+      key: 4
+      probability: 0.4
+      biomeElementInfo:
+      - sprites:
+        - {fileID: 11400000, guid: 8e25f3c1482846a4a8aa2dea348410e3, type: 2}
+        - {fileID: 11400000, guid: 8a681f7f4db5e7b4d917a7299ad873a0, type: 2}
+        - {fileID: 11400000, guid: c1d5116d0ef30c047a17c76347356121, type: 2}
+        - {fileID: 11400000, guid: 71fae8bb91bca2f47839c0a46f7652d7, type: 2}
+        probabilities:
+        - 0.25
+        - 0.25
+        - 0.25
+        - 1
+--- !u!81 &5118839106680458986
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5118839106680458987}
+  m_Enabled: 1

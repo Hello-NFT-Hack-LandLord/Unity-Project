@@ -7,9 +7,9 @@ public class ERC1155BalanceOfExample : MonoBehaviour
 {
     async void Start()
     {
-        string chain = "avalanche";
-        string network = "testnet";
-        string contract = "0xbDF2d708c6E4705824dC024187cd219da41C8c81";
+        string chain = "ethereum";
+        string network = "rinkeby";
+        string contract = "0xCE5901Ef315f31a692271Bc858a7C65b2e97ce96";
         string account = "0xdD4c825203f97984e7867F11eeCc813A036089D1";
         string tokenId = "2";
 

@@ -28,6 +28,7 @@ public class CirclePreparation
         }
         #endregion
         #region Methods
+        
         private void FillCircle()
         {
                 for (int i = 0; i < matrix.Count; i++)
